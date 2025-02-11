@@ -115,7 +115,7 @@ def patch_new_price(cafe_id):
     except Exception as e:
         return jsonify(error=str(e)), 404
 
-# HTTP DELETE - Delete Record
+# HTTP DELETE - Delete Record - new text
 @app.route("/report-closed/<int:cafe_id>", methods=["DELETE"])
 def delete_cafe(cafe_id):
     api_key = request.args.get("api-key")
